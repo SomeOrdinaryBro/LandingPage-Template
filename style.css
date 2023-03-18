@@ -1,35 +1,29 @@
-/* Global styles */
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
 }
 
-/* Remove blue color highlight for buttons */
 button {
     outline: none;
 }
 
-/* Remove text underline for links */
 a:link,
 a:visited {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
 
-/* Remove blue color highlight for links */
 a:hover {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
 
-/* Site logo styles */
 .sitelogo img {
     width: 100px;
     height: auto;
     border-radius: 50px;
 }
 
-/* Description styles */
 .description {
     font-size: 1.1rem;
     margin-top: 20px;
@@ -37,7 +31,6 @@ a:hover {
     align-items: center;
 }
 
-/* Click here button styles */
 .clickhere {
     background-color: #007bff;
     color: #000000;
@@ -50,14 +43,12 @@ a:hover {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Added shadow */
 }
 
-/* Styling for site cards container */
 .sites-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-/* Styling for site cards */
 .site-card {
     width: 300px;
     background-color: #ffffff;
@@ -69,8 +60,6 @@ a:hover {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Added shadow */
 }
 
-
-/* Styling for first site */
 .siteso {
     background-color: #2ecc71;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Added shadow */
@@ -90,8 +79,6 @@ a:hover {
     color: #fff;
 }
 
-
-/* Styling for second site */
 .siteco {
     background-color: #3498db;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Added shadow */
@@ -111,8 +98,6 @@ a:hover {
     color: #ffffff;
 }
 
-
-/* Styling for third site */
 .sitelo {
     background-color: #fa4d4d;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Added shadow */
@@ -132,11 +117,9 @@ a:hover {
     color: #ffffff;
 }
 
-
-/* Styling for fourth site */
 .sitemo {
     background-color: #854040;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Added shadow */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .sitemo .description {
@@ -153,11 +136,9 @@ a:hover {
     color: #ffffff;
 }
 
-
-/* Styling for fifth site */
 .sitevo {
     background-color: #a28f21f8;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Added shadow */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
 }
 
 .sitevo .description {
@@ -174,11 +155,9 @@ a:hover {
     color: #ffffff;
 }
 
-
-/* Styling for Sixth site */
 .sitego {
     background-color: #b15db7f8;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Added shadow */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .sitego .description {
@@ -195,11 +174,9 @@ a:hover {
     color: #ffffff;
 }
 
-
-/* Styling for Seventh site */
 .sitezo {
     background-color: #4a9963f8;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Added shadow */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
 }
 
 .sitezo .description {
@@ -216,11 +193,9 @@ a:hover {
     color: #ffffff;
 }
 
-
-/* Styling for Eigth site */
 .sitebo {
     background-color: #377780f8;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Added shadow */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
 }
 
 .sitebo .description {
@@ -237,13 +212,12 @@ a:hover {
     color: #ffffff;
 }
 
-/* Styling for navigation bar */
 nav {
     background-color: #e2e2e2;
     display: flex;
-    justify-content: center; /* center align the items horizontally */
+    justify-content: center;
     align-items: center;
-    padding: 10px; /* add some padding to the navbar */
+    padding: 10px; 
 }
   
 nav img {
@@ -251,15 +225,12 @@ nav img {
     margin: 0 auto; 
 }
   
-
-/* Footer Container */
 .footer-container {
     background-color: #bfbfbf;
     padding: 30px 0;
     font-family: Arial, sans-serif;
   }
 
-  /* Footer Content */
   .footer-content {
     display: flex;
     flex-wrap: wrap;
@@ -268,7 +239,6 @@ nav img {
     margin: 0 auto;
   }
   
-  /* Footer Section */
   .footer-section {
     width: 20%;
     margin-bottom: 20px;

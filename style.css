@@ -1,0 +1,302 @@
+/* Global styles */
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+/* Remove blue color highlight for buttons */
+button {
+    outline: none;
+}
+
+/* Remove text underline for links */
+a:link,
+a:visited {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/* Remove blue color highlight for links */
+a:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/* Site logo styles */
+.sitelogo img {
+    width: 100px;
+    height: auto;
+    border-radius: 50px;
+}
+
+/* Description styles */
+.description {
+    font-size: 1.1rem;
+    margin-top: 20px;
+    border: none;
+    align-items: center;
+}
+
+/* Click here button styles */
+.clickhere {
+    background-color: #007bff;
+    color: #000000;
+    font-size: 1rem;
+    padding: 8px 18px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Added shadow */
+}
+
+/* Styling for site cards container */
+.sites-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Styling for site cards */
+.site-card {
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Added shadow */
+}
+
+
+/* Styling for first site */
+.siteso {
+    background-color: #2ecc71;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Added shadow */
+}
+
+.siteso .description {
+    color: #fff;
+}
+
+.siteso .clickhere {
+    background-color: #00000063;
+    color: #2ecc71;
+}
+
+.siteso .clickhere:hover {
+    background-color: #0b5027;
+    color: #fff;
+}
+
+
+/* Styling for second site */
+.siteco {
+    background-color: #3498db;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Added shadow */
+}
+
+.siteco .description {
+    color: #fff;
+}
+
+.siteco .clickhere {
+    background-color: #63b9eab1;
+    color: #000000;
+}
+
+.siteco .clickhere:hover {
+    background-color: #3778ef;
+    color: #ffffff;
+}
+
+
+/* Styling for third site */
+.sitelo {
+    background-color: #fa4d4d;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Added shadow */
+}
+
+.sitelo .description {
+    color: #fff;
+}
+
+.sitelo .clickhere {
+    background-color: #c03838;
+    color: #000000;
+}
+
+.sitelo .clickhere:hover {
+    background-color: #ca2222;
+    color: #ffffff;
+}
+
+
+/* Styling for fourth site */
+.sitemo {
+    background-color: #854040;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Added shadow */
+}
+
+.sitemo .description {
+    color: #fff;
+}
+
+.sitemo .clickhere {
+    background-color: #672929;
+    color: #000000;
+}
+
+.sitemo .clickhere:hover {
+    background-color: #801212;
+    color: #ffffff;
+}
+
+
+/* Styling for fifth site */
+.sitevo {
+    background-color: #a28f21f8;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Added shadow */
+}
+
+.sitevo .description {
+    color: #ffffff;
+}
+
+.sitevo .clickhere {
+    background-color: #afba1d;
+    color: #000000;
+}
+
+.sitevo .clickhere:hover {
+    background-color: #c8ca25;
+    color: #ffffff;
+}
+
+
+/* Styling for Sixth site */
+.sitego {
+    background-color: #b15db7f8;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Added shadow */
+}
+
+.sitego .description {
+    color: #ffffff;
+}
+
+.sitego .clickhere {
+    background-color: #ba1da8;
+    color: #000000;
+}
+
+.sitego .clickhere:hover {
+    background-color: #d534c5;
+    color: #ffffff;
+}
+
+
+/* Styling for Seventh site */
+.sitezo {
+    background-color: #4a9963f8;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Added shadow */
+}
+
+.sitezo .description {
+    color: #ffffff;
+}
+
+.sitezo .clickhere {
+    background-color: #106330;
+    color: #000000;
+}
+
+.sitezo .clickhere:hover {
+    background-color: #1aa15b;
+    color: #ffffff;
+}
+
+
+/* Styling for Eigth site */
+.sitebo {
+    background-color: #377780f8;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Added shadow */
+}
+
+.sitebo .description {
+    color: #ffffff;
+}
+
+.sitebo .clickhere {
+    background-color: #106063;
+    color: #000000;
+}
+
+.sitebo .clickhere:hover {
+    background-color: #409296;
+    color: #ffffff;
+}
+
+/* Styling for navigation bar */
+nav {
+    background-color: #e2e2e2;
+    display: flex;
+    justify-content: center; /* center align the items horizontally */
+    align-items: center;
+    padding: 10px; /* add some padding to the navbar */
+}
+  
+nav img {
+    height: 60px; 
+    margin: 0 auto; 
+}
+  
+
+/* Footer Container */
+.footer-container {
+    background-color: #bfbfbf;
+    padding: 30px 0;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Footer Content */
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Footer Section */
+  .footer-section {
+    width: 20%;
+    margin-bottom: 20px;
+    color: #666666;
+  }
+  
+  .footer-section h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: #666666;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #0078d4;
+  }

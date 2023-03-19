@@ -1,34 +1,168 @@
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-decoration: none;
 }
 
-button {
+body {
+    height: 100vh;
+    background-color: black;
+    background-image: url(./images/background-image.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.137);
+    z-index: -1;
+  }
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+header {
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn {
+    background-color: orange;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
     outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale .2 ease;
 }
 
-a:link,
-a:visited {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+.action_btn:hover {
+    scale: 1.05;
+    color: white;
 }
 
-a:hover {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+.action_btn:active {
+    scale: 0.95
 }
 
-.sitelogo img {
-    width: 100px;
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(0, 0, 0, 0.342);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 190px;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 992px) {
+    .navbar .links,
+    .navbar .action_btn {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
+}
+
+/*Site Cards*/
+
+img {
+    width: 150px;
     height: auto;
-    border-radius: 50px;
+    border-radius: 100px;
 }
+
+img:hover {
+    scale: 1.05;
+    color: white;
+    transition: 150ms;
+}
+
 
 .description {
     font-size: 1.1rem;
     margin-top: 20px;
     border: none;
     align-items: center;
+    font-weight: bold;
+    color: white;
 }
 
 .clickhere {
@@ -40,38 +174,40 @@ a:hover {
     border-radius: 5px;
     margin-top: 20px;
     cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Added shadow */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .sites-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     justify-content: center;
 }
 
 .site-card {
-    width: 300px;
+    width: 260px;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    margin: 20px;
+    margin: 70px;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Added shadow */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.site-card:hover {
+    scale: 1.01;
+    color: white;
+    transition: 120ms;
 }
 
 .siteso {
     background-color: #2ecc71;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Added shadow */
-}
-
-.siteso .description {
-    color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .siteso .clickhere {
     background-color: #00000063;
-    color: #2ecc71;
+    color: #2ecc70;
 }
 
 .siteso .clickhere:hover {
@@ -84,9 +220,6 @@ a:hover {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Added shadow */
 }
 
-.siteco .description {
-    color: #fff;
-}
 
 .siteco .clickhere {
     background-color: #63b9eab1;
@@ -101,10 +234,6 @@ a:hover {
 .sitelo {
     background-color: #fa4d4d;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Added shadow */
-}
-
-.sitelo .description {
-    color: #fff;
 }
 
 .sitelo .clickhere {
@@ -122,10 +251,6 @@ a:hover {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-.sitemo .description {
-    color: #fff;
-}
-
 .sitemo .clickhere {
     background-color: #672929;
     color: #000000;
@@ -139,10 +264,6 @@ a:hover {
 .sitevo {
     background-color: #a28f21f8;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
-}
-
-.sitevo .description {
-    color: #ffffff;
 }
 
 .sitevo .clickhere {
@@ -160,10 +281,6 @@ a:hover {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-.sitego .description {
-    color: #ffffff;
-}
-
 .sitego .clickhere {
     background-color: #ba1da8;
     color: #000000;
@@ -177,10 +294,6 @@ a:hover {
 .sitezo {
     background-color: #4a9963f8;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
-}
-
-.sitezo .description {
-    color: #ffffff;
 }
 
 .sitezo .clickhere {
@@ -198,10 +311,6 @@ a:hover {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
 }
 
-.sitebo .description {
-    color: #ffffff;
-}
-
 .sitebo .clickhere {
     background-color: #106063;
     color: #000000;
@@ -211,62 +320,3 @@ a:hover {
     background-color: #409296;
     color: #ffffff;
 }
-
-nav {
-    background-color: #e2e2e2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px; 
-}
-  
-nav img {
-    height: 60px; 
-    margin: 0 auto; 
-}
-  
-.footer-container {
-    background-color: #bfbfbf;
-    padding: 30px 0;
-    font-family: Arial, sans-serif;
-  }
-
-  .footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .footer-section {
-    width: 20%;
-    margin-bottom: 20px;
-    color: #666666;
-  }
-  
-  .footer-section h4 {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .footer-section ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .footer-section ul li {
-    margin-bottom: 10px;
-  }
-  
-  .footer-section ul li a {
-    color: #666666;
-    text-decoration: none;
-    transition: color 0.2s ease;
-  }
-  
-  .footer-section ul li a:hover {
-    color: #0078d4;
-  }

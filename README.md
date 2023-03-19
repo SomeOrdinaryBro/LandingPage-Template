@@ -5,7 +5,7 @@ As a beginner in full-stack development, I am currently going through the Odin P
 
 ## Preview
 
-You can view the live site here: [Dashboard](https://someordinarybro.github.io/dashboard/)
+You can view the live site here: [Dashboard](https://someordinarybro.github.io/LandingPage-Template/)
 
 ## Contributions
 

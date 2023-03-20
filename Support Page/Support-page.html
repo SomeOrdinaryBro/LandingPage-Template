@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+
+    <title>SomeOrdinaryBro (Report Issue)</title>
+    <link rel="icon" href="../images/Site-Logo-Title.png" type="image/png">   
+
+  </head>
+  <body>
+    <h1>REPORT AN ISSUE</h1>
+    <h4>** Work in progress **</h4>
+    <form onsubmit="sendEmail(); return false;">
+      <label for="name">What Is Your Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="issue">What's the issue:</label>
+      <input type="text" id="issue" name="issue" required><br><br>
+      <label for="description">Please explain the issue in detail:</label>
+      <textarea id="description" name="description" rows="5" required></textarea><br><br>
+      <label for="support">Select the type of support you need:</label>
+      <select id="support" name="support" required>
+        <option value="">--Please choose an option--</option>
+        <option value="#">Major - Site is broken</option>
+        <option value="#">Moderate - A fuctionality stopped working</option>
+        <option value="#">Low - Something is not working how it's supposed to be working</option>
+      </select><br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <video autoplay muted loop id="video-background">
+        <source src="../images/Background-vid3.mp4" type="video/mp4">
+    </video>
+
+    <script>
+      // wanted to the user to choose the email they want to send the mail from above code and once they click it will open their default mail client installed and fill up with info they type in here
+
+      // function sendEmail() {
+      //   var name = document.getElementById("name").value;
+      //   var issue = document.getElementById("issue").value;
+      //   var description = document.getElementById("description").value;
+      //   var support = document.getElementById("support").value;
+      //   var subject = "Issue: " + issue;
+      //   var body = "Name: " + name + "\nDescription: " + description;
+      //   var email = "mailto:" + support + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+      //   window.location.href = email;
+      // }
+
+      document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
+  </body>
+</html>

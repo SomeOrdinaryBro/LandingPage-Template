@@ -8,7 +8,6 @@
 body {
     height: 100vh;
     background-color: black;
-    overflow: hidden;
   }
   
   #video-background {
@@ -21,6 +20,7 @@ body {
     object-fit: cover;
   }  
 
+  
 li {
     list-style: none;
 }
@@ -141,13 +141,13 @@ header {
 /*Site Cards*/
 
 img {
-    width: 150px;
+    width: 140px;
     height: auto;
     border-radius: 100px;
 }
 
 img:hover {
-    scale: 1.05;
+    scale: 1.08;
     color: white;
     transition: 250ms;
 }
@@ -183,10 +183,11 @@ img:hover {
 
 .site-card {
     width: 260px;
+    height: 298px;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin: 70px;
+    margin: 67px;
     padding: 20px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -261,17 +262,17 @@ img:hover {
 }
 
 .sitevo {
-    background-color: #a28f21f8;
+    background-color: #501e79;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
 }
 
 .sitevo .clickhere {
-    background-color: #afba1d;
+    background-color: #7537a8;
     color: #000000;
 }
 
 .sitevo .clickhere:hover {
-    background-color: #c8ca25;
+    background-color: #9050c4;
     color: #ffffff;
 }
 

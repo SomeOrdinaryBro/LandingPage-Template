@@ -8,21 +8,18 @@
 body {
     height: 100vh;
     background-color: black;
-    background-image: url(./images/background-image.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-body::before {
-    content: "";
+    overflow: hidden;
+  }
+  
+  #video-background {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.137);
+    width: 100vw;
+    height: 100vh;
     z-index: -1;
-  }
+    object-fit: cover;
+  }  
 
 li {
     list-style: none;
@@ -152,7 +149,7 @@ img {
 img:hover {
     scale: 1.05;
     color: white;
-    transition: 150ms;
+    transition: 250ms;
 }
 
 
@@ -181,27 +178,29 @@ img:hover {
     display: flex;
     flex-wrap:wrap;
     justify-content: center;
+    
 }
 
 .site-card {
     width: 260px;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin: 70px;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
 
 .site-card:hover {
-    scale: 1.01;
+    scale: 1.05;
     color: white;
-    transition: 120ms;
+    transition: 300ms;
 }
 
 .siteso {
-    background-color: #2ecc71;
+    background-color: #2ecc70;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 

@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
 }
 
 body {
@@ -320,3 +325,54 @@ img:hover {
     background-color: #409296;
     color: #ffffff;
 }
+
+#hero {
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    }
+    
+    #hero h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px #00000056;
+    text-transform: uppercase;
+    }
+    
+    .landing-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    text-decoration: none;
+    }
+    
+    .landing-button button {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px #00000069;
+    cursor: pointer;
+    backdrop-filter: blur(15px);
+    }
+
+    button:hover {
+        scale: 1.05;
+        transition: 300ms;
+    }
+
+    .landing-button:hover {
+        scale: 1.05;
+        transition: 300ms;
+    }
+
+    .landing-button:active {
+        scale: 0.90;
+        transition: 100ms;
+    }

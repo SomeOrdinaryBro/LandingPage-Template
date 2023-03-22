@@ -5,6 +5,11 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     text-decoration: none;
+
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
 }
 
 body {
@@ -91,3 +96,30 @@ body {
     margin-top: 10px;
     color: white;
   }
+
+  li {
+    list-style: none;
+}
+
+header {
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.links li {
+  margin: 0 10px;
+}
+
+.links li:first-child {
+  margin-left: 0;
+}
+
+.links li:last-child {
+  margin-right: 0;
+}
